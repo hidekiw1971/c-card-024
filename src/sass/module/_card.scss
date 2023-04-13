@@ -1,5 +1,15 @@
 @use "global" as *;
 
+.card {
+    max-width: rem(375);
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq(md) {
+        // 
+    }
+}
+
 .card>a>figure {
     display: block;
     position: relative;
