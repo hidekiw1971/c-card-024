@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.card>a>figure {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70%;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.card>a>figure>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include mq(md) {
+        // 
+    }
+}
+
+// カードの背景色設定
+.card>a {
+    display: flex;
+    flex-direction: column;
+    background: rgba(240, 230, 140, 1);
+    height: 100%;
+}
+
+// カード内の余白設定
+.card>a>h2,
+.card>a>p.message,
+.card>a>time,
+.card>a>p.category {
+    padding: 0 rem(10);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+.card>a {
+    padding-bottom: rem(10);
+
+    @include mq(md) {
+        // 
+    }
+}
+
+// 3点リーダーの設定
+.card>a>h2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.card>a>p.message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+// date&categoryの位置設定
+.card>a>time {
+    margin-top: auto;
+}
