@@ -1,7 +1,9 @@
-画像をコピペ
+<img width="1682" alt="image" src="https://user-images.githubusercontent.com/99580997/231750138-7c6f17fb-ddd5-4d1f-8e0f-bd11f19d17d7.png">
 
 # compornent（共通部品）
-- 説明
+- カードタイプ一覧（gridを使用してカード一覧を作成。）
+- カードの高さを統一。
+- 日付とカテゴリは下付きとする。
 
 # w3c html/css ck
 - confirmed or unconfirmed
